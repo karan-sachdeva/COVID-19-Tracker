@@ -1,0 +1,11 @@
+.deleteButton, .moreInfoButton{
+    background-color:rgb(10, 125, 192);
+    border-radius: 3px;
+    color:white;
+    border: none;
+    padding: 4px;
+}
+
+div{
+    font-size: medium;
+}

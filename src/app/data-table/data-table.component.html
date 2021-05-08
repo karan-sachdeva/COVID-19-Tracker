@@ -1,0 +1,24 @@
+<h2>Current Reports:</h2><br>
+<div>
+    <table id="table" class="table table-hover table-bordered table-dark">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Visit Location</th>
+            <th>Date and Time</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let report of reports">
+            <td>{{report.name}}</td>
+            <td>{{report.location}}</td>
+            <td>{{report.date}}</td>
+            <td><button id = "moreInfoButton{{report.reportNumber}}" class ="moreInfoButton">More Info</button></td>
+            <td><button id = "deleteButton{{report.reportNumber}}" class ="deleteButton">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<app-report-info></app-report-info>

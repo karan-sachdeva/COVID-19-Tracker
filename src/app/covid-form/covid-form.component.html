@@ -1,0 +1,19 @@
+<div>
+<button id = "reportButton" class="btn btn-primary btn-lg btn-block">REPORT COVID</button> <br><br>
+<form id ="reportForm" [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+<label for="person_name">Name: </label>
+<input name = "person_name" type = "text" formControlName="name"> <br><br>
+<label for="existing_location">Choose an existing location: </label>
+<select name="existing_location" formControlName = "location">
+  <option [value]="location" *ngFor="let location of existingLocations">{{location}}</option> 
+</select><br>
+<p>OR</p>
+<label for="new_location">New Location: </label>
+<input name = "new_location" type = "text" formControlName = "location"> <br><br>
+<label for="phone">Enter phone number: </label>
+<input name="phone" type="number" formControlName = "phone"><br><br>
+<label for="date">Enter date and time: </label>
+<input name="date" type="datetime-local" formControlName = "date"><br><br>
+<button id = "sub">SUBMIT</button>
+</form>
+</div>

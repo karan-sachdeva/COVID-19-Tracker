@@ -1,0 +1,12 @@
+#sub{
+    background-color:rgb(10, 125, 192);
+    border-radius: 3px;
+    color:white;
+    border: none;
+    padding: 4px;
+    font-size: medium;
+}
+
+div{
+    font-size: medium;
+}
